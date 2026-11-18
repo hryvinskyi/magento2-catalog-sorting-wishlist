@@ -1,0 +1,33 @@
+{
+    "name": "hryvinskyi/magento2-catalog-sorting-wishlist",
+    "description": "Catalog sort option Now in Wishlists: the products that sit in the most wishlists first, computed by the daily popularity data refresh.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Volodymyr Hryvinskyi",
+            "email": "volodymyr@hryvinskyi.com"
+        }
+    ],
+    "require": {
+        "php": "~8.1.0||~8.2.0||~8.3.0||~8.4.0||~8.5.0",
+        "hryvinskyi/magento2-catalog-sorting": "^1.0",
+        "hryvinskyi/magento2-catalog-sorting-options": "^1.0",
+        "hryvinskyi/magento2-catalog-sorting-metrics": "^1.0",
+        "magento/framework": "*",
+        "magento/module-wishlist": "*",
+        "magento/module-catalog": "*",
+        "magento/module-store": "*",
+        "magento/module-config": "*",
+        "magento/module-backend": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Hryvinskyi\\CatalogSortingWishlist\\": ""
+        }
+    }
+}
